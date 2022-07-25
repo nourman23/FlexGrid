@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: dimgray;
+  height: 70px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header ul {
+  width: 760px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header ul li {
+  text-align: center;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+main div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+}
+
+main div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+main div:nth-child(3) section {
+  height: 400px;
+}
+main div:nth-child(3) section p {
+  width: 450px;
+  height: 340px;
+  overflow-y: scroll;
+}
+main div:nth-child(3) section input {
+  margin: 10px;
+  width: 130px;
+  height: 30px;
+  background-color: black;
+  color: white;
+}
+
+main div:nth-child(3) section p::-webkit-scrollbar {
+  display: none;
+}
+
+main div:nth-child(3) section p {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+footer {
+  margin-top: 60px;
+}
